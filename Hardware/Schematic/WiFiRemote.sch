@@ -1,0 +1,532 @@
+EESchema Schematic File Version 4
+LIBS:WiFiRemote-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP:ESP-12E U2
+U 1 1 5FA48E33
+P 5250 1900
+F 0 "U2" H 5250 2665 50  0000 C CNN
+F 1 "ESP-12E" H 5250 2574 50  0000 C CNN
+F 2 "ESP8266:ESP-12E_SMD" H 5250 1900 50  0001 C CNN
+F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 5250 1900 50  0001 C CNN
+	1    5250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_Small R2
+U 1 1 5FA48E48
+P 3900 1400
+F 0 "R2" H 3959 1446 50  0000 L CNN
+F 1 "4k7" H 3959 1355 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 3900 1400 50  0001 C CNN
+F 3 "" H 3900 1400 50  0000 C CNN
+	1    3900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1600 3900 1500
+$Comp
+L device:C_Small C1
+U 1 1 5FA48E50
+P 1200 1450
+F 0 "C1" H 1292 1496 50  0000 L CNN
+F 1 "100n" H 1292 1405 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 1200 1450 50  0001 C CNN
+F 3 "" H 1200 1450 50  0000 C CNN
+	1    1200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C2
+U 1 1 5FA48E57
+P 2200 1450
+F 0 "C2" H 2292 1496 50  0000 L CNN
+F 1 "10u" H 2292 1405 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 2200 1450 50  0001 C CNN
+F 3 "" H 2200 1450 50  0000 C CNN
+	1    2200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C3
+U 1 1 5FA48E5E
+P 4150 2650
+F 0 "C3" H 4242 2696 50  0000 L CNN
+F 1 "100n" H 4242 2605 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 4150 2650 50  0001 C CNN
+F 3 "" H 4150 2650 50  0000 C CNN
+	1    4150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0101
+U 1 1 5FA48E65
+P 3600 2450
+F 0 "#PWR0101" H 3600 2200 50  0001 C CNN
+F 1 "GNDD" H 3604 2295 50  0000 C CNN
+F 2 "" H 3600 2450 50  0001 C CNN
+F 3 "" H 3600 2450 50  0001 C CNN
+	1    3600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0102
+U 1 1 5FA48E6B
+P 7850 2050
+F 0 "#PWR0102" H 7850 1800 50  0001 C CNN
+F 1 "GNDD" H 7854 1895 50  0000 C CNN
+F 2 "" H 7850 2050 50  0001 C CNN
+F 3 "" H 7850 2050 50  0001 C CNN
+	1    7850 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0103
+U 1 1 5FA48E71
+P 4150 2800
+F 0 "#PWR0103" H 4150 2550 50  0001 C CNN
+F 1 "GNDD" H 4154 2645 50  0000 C CNN
+F 2 "" H 4150 2800 50  0001 C CNN
+F 3 "" H 4150 2800 50  0001 C CNN
+	1    4150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0104
+U 1 1 5FA48E77
+P 6350 2550
+F 0 "#PWR0104" H 6350 2300 50  0001 C CNN
+F 1 "GNDD" H 6354 2395 50  0000 C CNN
+F 2 "" H 6350 2550 50  0001 C CNN
+F 3 "" H 6350 2550 50  0001 C CNN
+	1    6350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0105
+U 1 1 5FA48E7D
+P 1700 1700
+F 0 "#PWR0105" H 1700 1450 50  0001 C CNN
+F 1 "GNDD" H 1704 1545 50  0000 C CNN
+F 2 "" H 1700 1700 50  0001 C CNN
+F 3 "" H 1700 1700 50  0001 C CNN
+	1    1700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5FA48E83
+P 1200 1200
+F 0 "#PWR0106" H 1200 1050 50  0001 C CNN
+F 1 "+5V" H 1215 1373 50  0000 C CNN
+F 2 "" H 1200 1200 50  0001 C CNN
+F 3 "" H 1200 1200 50  0001 C CNN
+	1    1200 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5FA48E89
+P 2200 1250
+F 0 "#PWR0107" H 2200 1100 50  0001 C CNN
+F 1 "+3.3V" H 2215 1423 50  0000 C CNN
+F 2 "" H 2200 1250 50  0001 C CNN
+F 3 "" H 2200 1250 50  0001 C CNN
+	1    2200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1300 2200 1350
+Wire Wire Line
+	2200 1300 2200 1250
+Connection ~ 2200 1300
+Wire Wire Line
+	1700 1600 1700 1650
+Wire Wire Line
+	2200 1650 2200 1550
+Connection ~ 1700 1650
+Wire Wire Line
+	1200 1650 1200 1550
+Wire Wire Line
+	1200 1350 1200 1300
+Wire Wire Line
+	1200 1300 1400 1300
+Connection ~ 1200 1300
+Wire Wire Line
+	1200 1300 1200 1200
+Wire Wire Line
+	2000 1300 2200 1300
+Wire Wire Line
+	1700 1650 2200 1650
+Wire Wire Line
+	1200 1650 1700 1650
+Wire Wire Line
+	1700 1650 1700 1700
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 5FA48EA0
+P 4050 1200
+F 0 "#PWR0108" H 4050 1050 50  0001 C CNN
+F 1 "+3.3V" H 4065 1373 50  0000 C CNN
+F 2 "" H 4050 1200 50  0001 C CNN
+F 3 "" H 4050 1200 50  0001 C CNN
+	1    4050 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1250 4050 1200
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5FA48EA7
+P 4150 2450
+F 0 "#PWR0109" H 4150 2300 50  0001 C CNN
+F 1 "+3.3V" H 4165 2623 50  0000 C CNN
+F 2 "" H 4150 2450 50  0001 C CNN
+F 3 "" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2800 4150 2750
+Wire Wire Line
+	6250 2300 6150 2300
+Wire Notes Line
+	1050 950  2500 950 
+Wire Notes Line
+	2500 950  2500 1950
+Wire Notes Line
+	2500 1950 1050 1950
+Wire Notes Line
+	1050 950  1050 1950
+Text Notes 1050 1950 0    50   ~ 0
+ESP power
+$Comp
+L device:R_Small R5
+U 1 1 5FA48ED5
+P 6450 2350
+F 0 "R5" H 6509 2396 50  0000 L CNN
+F 1 "4k7" H 6509 2305 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 6450 2350 50  0001 C CNN
+F 3 "" H 6450 2350 50  0000 C CNN
+	1    6450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2550 6350 2500
+Wire Wire Line
+	6350 2500 6450 2500
+Wire Wire Line
+	6450 2500 6450 2450
+Wire Wire Line
+	6350 2500 6250 2500
+Wire Wire Line
+	6250 2300 6250 2500
+Connection ~ 6350 2500
+Wire Wire Line
+	6150 2200 6450 2200
+Wire Wire Line
+	6450 2200 6450 2250
+Wire Wire Line
+	7150 2000 6150 2000
+Wire Wire Line
+	7750 2000 7850 2000
+Wire Wire Line
+	7850 2000 7850 2050
+Connection ~ 3900 1600
+Wire Wire Line
+	3900 1600 4350 1600
+$Comp
+L device:R_Small R3
+U 1 1 5FA48EEA
+P 4150 1400
+F 0 "R3" H 4209 1446 50  0000 L CNN
+F 1 "4k7" H 4209 1355 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 4150 1400 50  0001 C CNN
+F 3 "" H 4150 1400 50  0000 C CNN
+	1    4150 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1300 3900 1250
+Wire Wire Line
+	3900 1250 4050 1250
+Wire Wire Line
+	4050 1250 4150 1250
+Wire Wire Line
+	4150 1250 4150 1300
+Connection ~ 4050 1250
+Wire Wire Line
+	4150 1500 4150 1800
+Wire Wire Line
+	4150 1800 4350 1800
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U1
+U 1 1 5FA48EF8
+P 1700 1300
+F 0 "U1" H 1700 1542 50  0000 C CNN
+F 1 "LD1117-3.3" H 1700 1451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1700 1500 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 1800 1050 50  0001 C CNN
+	1    1700 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2450 4150 2500
+Wire Wire Line
+	4150 2500 4300 2500
+Wire Wire Line
+	4300 2500 4300 2300
+Connection ~ 4150 2500
+Wire Wire Line
+	4150 2500 4150 2550
+Wire Wire Line
+	4300 2300 4350 2300
+Wire Notes Line
+	3100 900  3100 3050
+Text Notes 3100 3050 0    50   ~ 0
+Main board\n
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5FA48F67
+P 6300 1200
+F 0 "J1" V 6266 1012 50  0000 R CNN
+F 1 "Tx Rx GND" V 6400 1400 50  0000 R CNN
+F 2 "kicad-libraries-master:Pin_Header_Straight_1x03_Pitch2.54mm" H 6300 1200 50  0001 C CNN
+F 3 "~" H 6300 1200 50  0001 C CNN
+	1    6300 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR0110
+U 1 1 5FA48F6E
+P 6400 1500
+F 0 "#PWR0110" H 6400 1250 50  0001 C CNN
+F 1 "GNDD" H 6404 1345 50  0000 C CNN
+F 2 "" H 6400 1500 50  0001 C CNN
+F 3 "" H 6400 1500 50  0001 C CNN
+	1    6400 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1700 6300 1700
+Wire Wire Line
+	6400 1500 6400 1400
+Wire Wire Line
+	6150 1600 6200 1600
+Wire Wire Line
+	6200 1400 6200 1600
+Wire Wire Line
+	6300 1400 6300 1700
+$Comp
+L device:JUMPER JP1
+U 1 1 5FA48E41
+P 7450 2000
+F 0 "JP1" H 7450 2264 50  0000 C CNN
+F 1 "Program" H 7450 2173 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 7450 2000 50  0001 C CNN
+F 3 "" H 7450 2000 50  0000 C CNN
+	1    7450 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Mini J2
+U 1 1 5FA4F051
+P 1300 2800
+F 0 "J2" H 1355 3267 50  0000 C CNN
+F 1 "USB_B_Mini" H 1355 3176 50  0000 C CNN
+F 2 "kicad-libraries-master:USB-MINI-B-SMD" H 1450 2750 50  0001 C CNN
+F 3 "~" H 1450 2750 50  0001 C CNN
+	1    1300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 5FA4F136
+P 1750 2500
+F 0 "#PWR0111" H 1750 2350 50  0001 C CNN
+F 1 "+5V" H 1765 2673 50  0000 C CNN
+F 2 "" H 1750 2500 50  0001 C CNN
+F 3 "" H 1750 2500 50  0001 C CNN
+	1    1750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2600 1750 2600
+Wire Wire Line
+	1750 2600 1750 2500
+$Comp
+L power:GNDD #PWR0112
+U 1 1 5FA504CD
+P 1300 3350
+F 0 "#PWR0112" H 1300 3100 50  0001 C CNN
+F 1 "GNDD" H 1304 3195 50  0000 C CNN
+F 2 "" H 1300 3350 50  0001 C CNN
+F 3 "" H 1300 3350 50  0001 C CNN
+	1    1300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3350 1300 3300
+Wire Wire Line
+	1300 3300 1200 3300
+Wire Wire Line
+	1200 3300 1200 3200
+Wire Wire Line
+	1300 3200 1300 3300
+Connection ~ 1300 3300
+$Comp
+L device:R_Small R1
+U 1 1 5FA6F546
+P 9300 1400
+F 0 "R1" H 9359 1446 50  0000 L CNN
+F 1 "33" H 9359 1355 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 9300 1400 50  0001 C CNN
+F 3 "" H 9300 1400 50  0000 C CNN
+	1    9300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_Small R4
+U 1 1 5FA6F5DA
+P 8550 2300
+F 0 "R4" H 8609 2346 50  0000 L CNN
+F 1 "100" H 8609 2255 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 8550 2300 50  0001 C CNN
+F 3 "" H 8550 2300 50  0000 C CNN
+	1    8550 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R_Small R6
+U 1 1 5FA6F66E
+P 8800 2500
+F 0 "R6" H 8859 2546 50  0000 L CNN
+F 1 "4k7" H 8859 2455 50  0000 L CNN
+F 2 "kicad-libraries-master:0805" H 8800 2500 50  0001 C CNN
+F 3 "" H 8800 2500 50  0000 C CNN
+	1    8800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 5FA73CB1
+P 9300 1200
+F 0 "#PWR0113" H 9300 1050 50  0001 C CNN
+F 1 "+3.3V" H 9315 1373 50  0000 C CNN
+F 2 "" H 9300 1200 50  0001 C CNN
+F 3 "" H 9300 1200 50  0001 C CNN
+	1    9300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1300 9300 1200
+Wire Wire Line
+	8650 2300 8800 2300
+Wire Wire Line
+	8800 2400 8800 2300
+Connection ~ 8800 2300
+Wire Wire Line
+	8800 2300 9000 2300
+Wire Wire Line
+	9300 2500 9300 2700
+$Comp
+L power:GNDD #PWR0114
+U 1 1 5FA76794
+P 9300 2800
+F 0 "#PWR0114" H 9300 2550 50  0001 C CNN
+F 1 "GNDD" H 9304 2645 50  0000 C CNN
+F 2 "" H 9300 2800 50  0001 C CNN
+F 3 "" H 9300 2800 50  0001 C CNN
+	1    9300 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2700 9300 2700
+Wire Wire Line
+	8800 2700 8800 2600
+Wire Wire Line
+	9300 2800 9300 2700
+Connection ~ 9300 2700
+Wire Wire Line
+	6150 1800 7000 1800
+Wire Wire Line
+	7000 1800 7000 1450
+Wire Wire Line
+	7000 1450 8300 1450
+Wire Wire Line
+	8300 1450 8300 2300
+Wire Wire Line
+	8300 2300 8450 2300
+$Comp
+L device:JUMPER JP2
+U 1 1 5FA7B7AF
+P 3600 2050
+F 0 "JP2" H 3600 2314 50  0000 C CNN
+F 1 "RESET" H 3600 2223 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 3600 2050 50  0001 C CNN
+F 3 "" H 3600 2050 50  0000 C CNN
+	1    3600 2050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3600 1750 3600 1600
+Wire Wire Line
+	3600 1600 3900 1600
+Wire Wire Line
+	3600 2450 3600 2350
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 5FA7E9DE
+P 9200 2300
+F 0 "Q1" H 9405 2346 50  0000 L CNN
+F 1 "NX7002BK" H 9405 2255 50  0000 L CNN
+F 2 "kicad-libraries-master:SOT23-3" H 9400 2225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 9200 2300 50  0001 L CNN
+	1    9200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:LED D1
+U 1 1 5FA4EF51
+P 9300 1800
+F 0 "D1" H 9300 1555 50  0000 C CNN
+F 1 "LED" H 9300 1646 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 9300 1800 50  0001 C CNN
+F 3 "" H 9300 1800 50  0000 C CNN
+	1    9300 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9300 1500 9300 1600
+Wire Wire Line
+	9300 2100 9300 2000
+Wire Notes Line
+	10000 900  10000 3050
+Wire Notes Line
+	3100 3050 10000 3050
+Wire Notes Line
+	3100 900  10000 900 
+Wire Notes Line
+	1050 2200 1050 3600
+Wire Notes Line
+	1050 3600 2200 3600
+Wire Notes Line
+	2200 3600 2200 2200
+Wire Notes Line
+	2200 2200 1050 2200
+Text Notes 1050 3600 0    50   ~ 0
+USB
+$EndSCHEMATC
