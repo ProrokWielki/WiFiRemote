@@ -13,7 +13,7 @@
 #include "esp_mqtt_helpers/helpers/ota.h"
 #include "esp_mqtt_helpers/helpers/utils.h"
 
-#include "devices/airwell_rc08b.h"
+#include "devices/airwell_rc08b/airwell_rc08b.h"
 
 WiFiClient wifi_;
 PubSubClient mqtt_(mqtt::server_ip, mqtt::server_port, wifi_);
