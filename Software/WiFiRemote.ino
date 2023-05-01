@@ -45,8 +45,9 @@ void setup()
     ota::initialize(wifi::hostname);
 
     WiFi.begin(wifi::ssid, wifi::password);
+    WiFi.mode(WIFI_STA);
 
-    wait_for_initialization([]() { return not WiFi.status() == WL_CONNECTED; });
+    wait_for_initialization([]() { return not(WiFi.status() == WL_CONNECTED); });
     wait_for_initialization([]() { return not mqtt_.connect(mqtt::client_id); });
 
     mqtt_.setCallback([](char * topic, byte * payload, unsigned int length) { handle_topic[topic](payload, length); });
